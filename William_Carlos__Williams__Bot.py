@@ -3,7 +3,7 @@ import wordslist
 
 # this is william carlos williams bot
 # infinite nonsense variations of 'this is just to say'
-# this generator forms the poem from the options in the class lists 
+# this generator forms the poem from the options in the file wordlists.py 
 
 # line structure
 Line_1 = "\t I have " + random.choice(wordslist.Past_Simple_Verb) + "\n"
