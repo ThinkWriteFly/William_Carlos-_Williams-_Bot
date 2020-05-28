@@ -30,4 +30,4 @@ with open('botpoems.txt','a') as f:
     print (poem)
     f.write (poem)
     print ("\n\n\t\t\t - WcWBot")
-    f.write ("\n\n\t\t\t - WcWBot")
+    f.write ("\n\n\t\t\t - WcWBot\n\n")
