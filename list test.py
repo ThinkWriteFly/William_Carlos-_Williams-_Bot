@@ -1,0 +1,3 @@
+
+import wordslist
+print(Adjective)

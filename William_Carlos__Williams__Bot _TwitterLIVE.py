@@ -1,14 +1,9 @@
 import random
-from Lists import Past_Simple_Verb
-from Lists import Meal_Occasion
-from Lists import Noun_Object_plural
-from Lists import Direction
-from Lists import Container
-from Lists import Adjective
+import wordslist
 
 # this is william carlos williams bot
 # infinite nonsense variations of 'this is just to say'
-# this generator forms the poem from the options in the file wordlists.py 
+# this generator forms the poem from the options in the class lists 
 
 # line structure
 Line_1 = "\t I have " + random.choice(wordslist.Past_Simple_Verb) + "\n"
@@ -25,10 +20,14 @@ Line_11 = "\t so " + random.choice(wordslist.Adjective) + "\n"
 Line_12 = "\t and so " + random.choice(wordslist.Adjective) + "\n"
 
 # poem structure
-Poem = Line_1 + Line_2 + Line_3 + Line_4 + "\n" + Line_5 + Line_6 + Line_7 +  Line_8 + "\n" + Line_9 + Line_10 + Line_11 + Line_12
+poem = Line_1 + Line_2 + Line_3 + Line_4 + " \n" + Line_5 + Line_6 + Line_7 + " \n" + Line_8 + "\n" + Line_9 + Line_10 + Line_11 + Line_12
 
 
 # Output structure
-print ("ThIs Is JuSt To SaY \n\n\n\n")
-print (Poem)
-print ("\n\n\t\t\t - WcWBot")
+with open('botpoems.txt','a') as f:
+    print ("ThIs Is JuSt To SaY \n\n\n\n")
+    f.write ("\n\n\nThIs Is JuSt To SaY \n\n\n\n") 
+    print (poem)
+    f.write (poem)
+    print ("\n\n\t\t\t - WcWBot")
+    f.write ("\n\n\t\t\t - WcWBot\n\n")
