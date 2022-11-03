@@ -1,15 +1,13 @@
 import random
+from Lists import Past_Simple_Verb
+from Lists import Meal_Occasion
+from Lists import Noun_Object_plural
+from Lists import Direction
+from Lists import Container
+from Lists import Adjective
 
 # this is william carlos williams bot
 # infinite nonsense variations of 'this is just to say'
-
-#Lists
-Noun_Object_plural = ['chairs','peaches', 'plums','convertible']
-Past_Simple_Verb = ['eaten','slapped','taken','diluted','defected']
-Meal_Occasion = ['breakfast','samhein','easter','dinner','banquet']
-Direction = ['under','above', 'inside', 'surrounding']
-Container = ['fridge', 'freezer','loot chest', 'cupboard']
-Adjective = ['delicious','salubrious','fantastic','phenomenal','aggressive']
 # line structure
 Line_1 = "\t I have " + random.choice(Past_Simple_Verb) + "\n"
 Line_2 = "\t the " + random.choice(Noun_Object_plural) + "\n"
@@ -25,10 +23,10 @@ Line_11 = "\t so " + random.choice(Adjective) + "\n"
 Line_12 = "\t and so " + random.choice(Adjective) + "\n"
 
 # poem structure
-poem = Line_1 + Line_2 + Line_3 + Line_4 + " \n" + Line_5 + Line_6 + Line_7 + " \n" + Line_8 + "\n" + Line_9 + Line_10 + Line_11 + Line_12
+Poem = Line_1 + Line_2 + Line_3 + Line_4 + "\n" + Line_5 + Line_6 + Line_7 +  Line_8 + "\n" + Line_9 + Line_10 + Line_11 + Line_12
 
 
 # Output structure
 print ("ThIs Is JuSt To SaY \n\n\n\n")
-print (poem)
+print (Poem)
 print ("\n\n\t\t\t - WcWBot")
