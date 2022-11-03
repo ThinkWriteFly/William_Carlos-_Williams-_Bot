@@ -1,4 +1,3 @@
-class my_class(Lists): 
     #Lists in use for poem completion
     Noun_Object_plural = ['chairs','peaches', 'plums','convertible']
     Past_Simple_Verb = ['eaten','slapped','taken','diluted','defected']
